@@ -1,4 +1,4 @@
-from ftplib import FTP, error_perm
+ from ftplib import FTP, error_perm
 import os
 import glob
 import pandas
@@ -80,5 +80,6 @@ def plot(outfigure="C:\\out\\Ploted.png"):
     df=pivot()
     df.T.plot(subplots=True,kind='bar')
     sns.plt.savefig(outfigure,dpi=200)
+
 
 
